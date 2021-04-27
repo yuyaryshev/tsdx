@@ -49,7 +49,7 @@ import { composePackageJson } from './templates/utils';
 import * as deprecated from './deprecated';
 const pkg = require('../package.json');
 
-const prog = sade('tsdx');
+const prog = sade('tsdy');
 
 let appPackageJson: PackageJson;
 
@@ -569,8 +569,8 @@ prog
         opts['_'] = defaultInputs;
         console.log(
           chalk.yellow(
-            `Defaulting to "tsdx lint ${defaultInputs.join(' ')}"`,
-            '\nYou can override this in the package.json scripts, like "lint": "tsdx lint src otherDir"'
+            `Defaulting to "tsdy lint ${defaultInputs.join(' ')}"`,
+            '\nYou can override this in the package.json scripts, like "lint": "tsdy lint src otherDir"'
           )
         );
       }
